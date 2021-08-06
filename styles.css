@@ -137,7 +137,7 @@ body {
   }
 }
 
-.button {
+.button-default {
   border: none;
   color: black;
   padding: 15px 32px;
