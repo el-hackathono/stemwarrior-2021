@@ -1,4 +1,4 @@
-: set up webpage
+# set up webpage
 
 cd flask
 export FLASK_APP=src/app
