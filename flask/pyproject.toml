@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "ZADZ Back"
+name = "ZADZ Backend"
 version = "0.1.0"
 description = ""
 authors = ["zainthemaynnm <zainyusufazam@gmail.com>"]
