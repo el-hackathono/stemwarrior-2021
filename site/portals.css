@@ -1,40 +1,48 @@
 body {
-    background: #202330;
+    background: linear-gradient(to right, rgb(248, 32, 3), rgba(250, 3, 3, 0.822) 25%);
+    background: rgb(32, 35, 48);
     font-family: 'Open Sans', sans-serif
 }
 
-
-h1 {
-    color: white;
-}
-
-.content {
+.Basic-Info {
     text-align: center;
-    font-size: 1.65rem;
-    margin: 10px;
-    padding: 10vh;
-    color: white;
 }
 
-.title {
-    text-align: center;
-    font-size: 1.65rem;
-    margin: 5px;
-    color: white;
-}
-
-.app{
-    display:grid;
+.app {
+    display: grid;
     justify-content: center;
-    grid-template-columns: repeat(1);
-    grid-template-rows: repeat(5);
+    grid-template-columns: repeat(1, 100vh);
+    grid-template-rows: repeat(2, 83vh);
 }
 
-.app>button{
+.app .search-box {
+    width: 100%;
+    max-width: 400px;
+    padding: 10px 25px;
+    border-radius: 3%;
+    border: none;
+    outline: none;
+    background-color: rgb(10, 10, 10);
+    color: aliceblue;
+    border-radius: 23px 0px 16px 0px;
+    color: #fcfcfcc4;
+    font-size: 26px;
+    font-weight: 350;
+    transition: 0.3s ease-out;
+}
+
+.app .search-box:focus {
+    background-color: rgb(3, 229, 245);
+}
+
+.app>button {
     margin: 3px;
     border-radius: 4px;
+    max-width: 150px;
     border: none;
-    font-size: 1.5rem;
+    background: rgba(255, 255, 255, 0.2);
+    color: #ffffff;
+    font-size: 1.05rem;
     outline: none;
     cursor: pointer;
     display: inline-flex;
@@ -42,18 +50,52 @@ h1 {
     justify-content: center;
     vertical-align: top;
     padding: 20px;
-    padding-left: 500px;
-    padding-right: 500px;
     -webkit-tap-highlight-color: transparent;
     position: relative;
-    color:white;
-    background-color:royalblue;
-
-    border: navy 2px;
+    padding-left: 70px;
+    padding-right: 70px;
+    margin-left: 4vh;
 }
 
-.app>button:hover{ 
-    padding: 25px;
-    padding-left: 550px;
-    padding-right: 550px;
+.app>button:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.content>button {
+    margin: 3px;
+    border-radius: 4px;
+    border: none;
+    background-color: cadetblue;
+    color: #ffffff;
+    font-size: 1.05rem;
+    outline: none;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    vertical-align: top;
+    padding: 20px;
+    padding-left: 200px;
+    padding-right: 200px;
+    -webkit-tap-highlight-color: transparent;
+    position: relative;
+}
+
+.content>button:hover {
+    padding: 24px;
+    padding-left: 220px;
+    padding-right: 220px;
+    background-color: cadetblue;
+}
+
+.content {
+    font-size: 1.65rem;
+    margin: 10px;
+    padding: 10vh;
+    border: 2px solid rgb(255, 255, 255);
+    color: white;
+}
+
+h1 {
+    color: white;
 }
