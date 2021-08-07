@@ -161,15 +161,16 @@ body {
 }
 
 .card {
-  border-radius: 16px;
-  height: 40vh;
-  width: 30vh;
+  border-radius: 5px;
+  width: 300px;
+  height: 300px;
   text-align: center;
   padding-top: 5px;
+  color: white;
 }
 
 .card-one {
-  background-color: #414A75;
+  background: linear-gradient(270deg, #414A75 -3.22%, #745689 105%);
   position: absolute;
   left: 20%;
   top: 70%;
@@ -180,36 +181,36 @@ body {
 }
 
 .card-two {
-  background-color: #21A5DB;
+  background: linear-gradient(270deg, #21A5DB -3.22%, #00D1D2 105%);
   position: absolute;
   left: 40%;
   top: 70%;
   cursor: default;
   transform: translate(-50%,-50%);
   opacity: 0;
-  animation: show 2s ease forwards 6s;
+  animation: show 2s ease forwards 8s;
 }
 
 .card-three {
-  background-color: #E08D5A;
+  background: linear-gradient(270deg, #E08D5A -3.22%, #F6B95B 105%);
   position: absolute;
   left: 60%;
   top: 70%;
   cursor: default;
   transform: translate(-50%,-50%);
   opacity: 0;
-  animation: show 2s ease forwards 7s; 
+  animation: show 2s ease forwards 11s; 
 }
 
 .card-four {
-  background-color: #A82F08;
+  background: linear-gradient(270deg, #A82F08 -3.22%, #CF7913 105%);
   position: absolute;
   left: 80%;
   top: 70%;
   cursor: default;
   transform: translate(-50%,-50%);
   opacity: 0;
-  animation: show 2s ease forwards 8s;
+  animation: show 2s ease forwards 14s;
 }
 
 .activate-two {
