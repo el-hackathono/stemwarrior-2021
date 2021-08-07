@@ -245,6 +245,12 @@ body {
     .default-button {
         width: 60%;
     }
+    .title {
+        width: 100%;
+    }
+    .subtitle {
+        font-size: 1.6rem;
+    }
 }
 
 
@@ -258,4 +264,12 @@ body {
 
 [class="default-button"] {
     width: 40%
+}
+
+[class="title"] {
+    width: 50%;
+}
+
+[class="subtitle"] {
+    font-size: 1rem;
 }
