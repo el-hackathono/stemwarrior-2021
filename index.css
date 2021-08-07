@@ -123,6 +123,15 @@ body {
   }
 }
 
+@keyframes cursor {
+  from {
+    cursor: default;
+  }
+  to {
+    cursor: pointer;
+  }
+}
+
 
 @keyframes show {
   from {
@@ -166,6 +175,7 @@ body {
   top: 70%;
   transform: translate(-50%,-50%);
   opacity: 0;
+  cursor: default;
   animation: show 2s ease forwards 5s;
 }
 
@@ -174,6 +184,7 @@ body {
   position: absolute;
   left: 40%;
   top: 70%;
+  cursor: default;
   transform: translate(-50%,-50%);
   opacity: 0;
   animation: show 2s ease forwards 6s;
@@ -184,6 +195,7 @@ body {
   position: absolute;
   left: 60%;
   top: 70%;
+  cursor: default;
   transform: translate(-50%,-50%);
   opacity: 0;
   animation: show 2s ease forwards 7s;
@@ -194,6 +206,7 @@ body {
   position: absolute;
   left: 80%;
   top: 70%;
+  cursor: default;
   transform: translate(-50%,-50%);
   opacity: 0;
   animation: show 2s ease forwards 8s;
