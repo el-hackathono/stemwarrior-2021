@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MainPage</title>
-    <link rel="stylesheet" href="portals.css" />
+    <link rel="stylesheet" href="{{url_for('static', filename='portals.css')}}" />
     <script src="script.js" defer></script>
 </head>
 
@@ -23,7 +23,7 @@
         <div class="content">
             <h3>Phishing Wesbites</h3>
             <p>A website cloning the appearence of a secure website, that tricks you into inputing your email and password.</p>
-            <button onclick="window.location.href='disclaimers.html'">View Portal</button>
+            <button onclick="window.location.href='{{url_for('phishing')}}'">View Portal</button>
         </div>
 
 

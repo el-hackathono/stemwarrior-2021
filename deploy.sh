@@ -1,7 +1,7 @@
 # set up webpage
 
-cd flask
-export FLASK_APP=src/app
+cd flaskr
+export FLASK_APP=app
 
 pip install poetry
 poetry install
