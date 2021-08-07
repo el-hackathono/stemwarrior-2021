@@ -188,7 +188,7 @@ body {
   cursor: default;
   transform: translate(-50%,-50%);
   opacity: 0;
-  animation: show 2s ease forwards 8s;
+  animation: show 2s ease forwards 7s;
 }
 
 .card-three {
@@ -199,7 +199,7 @@ body {
   cursor: default;
   transform: translate(-50%,-50%);
   opacity: 0;
-  animation: show 2s ease forwards 11s; 
+  animation: show 2s ease forwards 9s; 
 }
 
 .card-four {
@@ -210,7 +210,7 @@ body {
   cursor: default;
   transform: translate(-50%,-50%);
   opacity: 0;
-  animation: show 2s ease forwards 14s;
+  animation: show 2s ease forwards 11s;
 }
 
 .activate-two {
