@@ -146,3 +146,21 @@ body {
   font-size: 16px;
   border-radius: 16px;
 }
+
+.navbar ul{
+  list-style-type: none;
+  overflow: hidden;
+  width: 100%;
+  height: 5vh;
+}
+
+.navbar li{
+  left: 50px;
+  float: left;
+}
+
+.navbar li a{
+  color: #fff;
+  display: block;
+  padding: 14px 16px;
+}
