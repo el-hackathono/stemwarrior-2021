@@ -44,50 +44,50 @@ body {
 }
 
 #title path:nth-child(5) {
-    stroke-dasharray: 571.5772094726562;
-    stroke-dashoffset: 571.5772094726562;
+    stroke-dasharray: 463.96795654296875;
+    stroke-dashoffset: 463.96795654296875;
     animation: line-anim 2s ease forwards 1.2s;
 }
 
 #title path:nth-child(6) {
-    stroke-dasharray: 571.5772094726562;
-    stroke-dashoffset: 571.5772094726562;
+    stroke-dasharray: 561.4005126953125;
+    stroke-dashoffset: 561.4005126953125;
     animation: line-anim 2s ease forwards 1.5s;
 }
 
 #title path:nth-child(7) {
-    stroke-dasharray: 571.5772094726562;
-    stroke-dashoffset: 571.5772094726562;
+    stroke-dasharray: 422.1629638671875;
+    stroke-dashoffset: 422.1629638671875;
     animation: line-anim 2s ease forwards 1.8s;
 }
 
 #title path:nth-child(8) {
-    stroke-dasharray: 571.5772094726562;
-    stroke-dashoffset: 571.5772094726562;
+    stroke-dasharray: 398.9284973144531;
+    stroke-dashoffset: 398.9284973144531;
     animation: line-anim 2s ease forwards 2.1s;
 }
 
 #title path:nth-child(9) {
-    stroke-dasharray: 571.5772094726562;
-    stroke-dashoffset: 571.5772094726562;
+    stroke-dasharray: 506.4461975097656;
+    stroke-dashoffset: 506.4461975097656;
     animation: line-anim 2s ease forwards 2.4s;
 }
 
 #title path:nth-child(10) {
-    stroke-dasharray: 571.5772094726562;
-    stroke-dashoffset: 571.5772094726562;
+    stroke-dasharray: 314.9497375488281;
+    stroke-dashoffset: 314.9497375488281;
     animation: line-anim 2s ease forwards 2.7s;
 }
 
 #title path:nth-child(11) {
-    stroke-dasharray: 433.7693786621094;
-    stroke-dashoffset: 433.76937866210942;
+    stroke-dasharray: 239.8091583251953;
+    stroke-dashoffset: 239.8091583251953;
     animation: line-anim 2s ease forwards 3s;
 }
 
 #title path:nth-child(12) {
-    stroke-dasharray: 422.4900817871094;
-    stroke-dashoffset: 422.4900817871094;
+    stroke-dasharray: 433.7693786621094;
+    stroke-dashoffset: 433.7693786621094;
     animation: line-anim 2s ease forwards 3.3s;
 }
 
@@ -112,6 +112,7 @@ body {
     top: 35%;
     left: 50%;
     opacity: 0;
+    text-align: center;
     transform: translate(-50%, -50%);
     animation: show 2s ease forwards 4s;
 }
