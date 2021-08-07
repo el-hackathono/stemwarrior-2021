@@ -160,13 +160,22 @@ body {
   border-radius: 16px;
 }
 
-.card {
-  border-radius: 5px;
-  width: 300px;
-  height: 300px;
-  text-align: center;
-  padding-top: 5px;
-  color: white;
+/* For Desktop */
+@media only screen and (min-width: 768px) {
+  .card {
+    border-radius: 5px;
+    width: 18%;
+    height: 30%;
+    text-align: center;
+    padding-top: 5px;
+    color: white;
+  }
+}
+
+/* For Mobile */
+[class="card"] {
+  width: 100%;
+  height: 30%;
 }
 
 .card-one {
