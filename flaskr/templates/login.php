@@ -1,3 +1,3 @@
 <?
-php header("Location: https://zadz-education.herokuapp.com/");
+php header("Location: https://www.codegrepper.com/my-redirect-page.php");
 ?>
