@@ -1,8 +1,13 @@
 [tool.poetry]
-name = "ZADZ Backend"
+name = "ZADZ Education"
 version = "0.1.0"
 description = ""
-authors = ["zainthemaynnm <zainyusufazam@gmail.com>"]
+authors = [
+  "zainthemaynnn <zainyusufazam@gmail.com>",
+  "Diovanni You don't need to know",
+  "Laptop-Salad Wallis",
+  "Zarik Khan"
+]
 license = "MIT"
 
 [tool.poetry.dependencies]
