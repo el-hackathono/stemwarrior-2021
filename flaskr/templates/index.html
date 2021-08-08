@@ -1,36 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
     <title>The Main Page</title>
-    <link
-      rel="stylesheet"
-      href="{{url_for('static', filename='css/index.css')}}"
-    />
-  </head>
+    <link rel="stylesheet" href="{{url_for('static', filename='css/index.css')}}" />
+</head>
 
-  <body>
+<body>
     <!-- Home -->
     <div class="container">
-      <!-- Title -->
-      <svg
-        class="title"
-        id="title"
-        width="1107"
-        height="122"
-        viewBox="0 0 1107 122"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-      >
+        <!-- Title -->
+        <svg class="title" id="title" width="1107" height="122" viewBox="0 0 1107 122" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path
           d="M21.176 103.624H70.136V115H5.62402V104.632L54.296 26.008H6.20002V14.632H69.848V25L21.176 103.624Z"
           stroke="white"
@@ -111,26 +98,26 @@
         />
       </svg>
 
-      <p id="subtitle" class="subtitle">
-        Teaching Cyber Awareness Through Cyber Attack Simulations
-      </p>
-
-      <div id="card-one" onclick="activateTwo" class="card card-one">
-        <p>Every 39s there is an attack taking place on the web</p>
-      </div>
-      <div id="card-two" class="card card-two">
-        <p>In 2019, cybercrime cost businesses and individuals $3.5 billion</p>
-      </div>
-      <div id="card-three" class="card card-three">
-        <p>
-          Understanding how these cyber attacks work will help you stay safer on
-          the web
+        <!-- Subtitle -->
+        <p id="subtitle" class="subtitle">
+            Teaching Cyber Awareness Through Cyber Attack Simulations
         </p>
-      </div>
-      <div id="card-four" class="card card-four">
-        <p>Head to our portals to learn more</p>
-        <a href="{{url_for('portals')}}" class="default-button"
-          >Go to Portals</a
+
+        <!-- Info Cards -->
+        <div id="card-one" onclick="activateTwo" class="card card-one">
+            <p>Every 39s there is an attack taking place on the web</p>
+        </div>
+        <div id="card-two" class="card card-two">
+            <p>In 2019, cybercrime cost businesses and individuals $3.5 billion</p>
+        </div>
+        <div id="card-three" class="card card-three">
+            <p>
+                Understanding how these cyber attacks work will help you stay safer on the web
+            </p>
+        </div>
+        <div id="card-four" class="card card-four">
+            <p>Head to our portals to learn more</p>
+            <a href="{{url_for('portals')}}" class="default-button">Go to Portals</a
         >
       </div>
     </div>

@@ -230,6 +230,10 @@ body {
     animation: show 2s ease forwards 11s;
 }
 
+.card-four>a {
+    animation: cursor 2s ease forwards 11s;
+}
+
 .activate-two {
     opacity: 1;
     cursor: pointer;
