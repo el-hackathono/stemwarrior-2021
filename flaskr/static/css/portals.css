@@ -217,7 +217,7 @@
     height: 100vh;
 }
 
-card>button:disabled,
+.card>button:disabled,
 button[disabled] {
     background-color: gray;
 }
