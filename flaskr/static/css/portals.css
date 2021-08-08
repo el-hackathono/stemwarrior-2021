@@ -148,12 +148,16 @@ body {
     justify-content: center;
     vertical-align: top;
     padding: 20px;
+    padding-left: 100px;
+    padding-right: 100px;
     -webkit-tap-highlight-color: transparent;
     position: relative;
 }
 
 .card>button:hover {
     padding: 24px;
+    padding-left: 120px;
+    padding-right: 120px;
     background-color: cadetblue;
 }
 
