@@ -126,6 +126,7 @@
     text-align: center;
     font-size: 3rem;
     margin: 2rem;
+    color: white;
 }
 
 
@@ -239,6 +240,10 @@ button[disabled]:hover {
     padding-left: 100px;
     padding-right: 100px;
     cursor: default;
+}
+
+.portals {
+    background-color: rgb(32, 35, 48);
 }
 
 
