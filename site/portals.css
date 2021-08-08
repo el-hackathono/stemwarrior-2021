@@ -1,52 +1,11 @@
 body {
-    background-color: rgb(32, 35, 48);
+    background: linear-gradient(to right, rgb(248, 32, 3), rgba(250, 3, 3, 0.822) 25%);
+    background: rgb(32, 35, 48);
     font-family: 'Open Sans', sans-serif
 }
 
-.title h1 {
-    display: inline-block;
-    color: white;
-    font-size: 3rem;
-}
-
-.title {
+.Basic-Info {
     text-align: center;
-    align-items: center;
-}
-
-.alpha-one:hover {
-    color: #414A75;
-    font-size: 2.8rem;
-}
-
-.alpha-two:hover {
-    color: #21A5DB;
-    font-size: 2.8rem;
-}
-
-.alpha-three:hover {
-    color: #E08D5A;
-    font-size: 2.8rem;
-}
-
-.alpha-four:hover {
-    color: #A82F08;
-    font-size: 2.8rem;
-}
-
-.alpha-five:hover {
-    color: #414A75;
-    font-size: 2.8rem;
-}
-
-.alpha-six:hover {
-    color: #21A5DB;
-    font-size: 2.8rem;
-}
-
-.alpha-seven:hover {
-    color: #E08D5A;
-    font-size: 2.8rem;
 }
 
 .app {
@@ -99,7 +58,7 @@ body {
 }
 
 .app>button:hover {
-    background: rgba(255, 255, 255, 0.2);
+    background-color: rgba(255, 255, 255, 0);
 }
 
 .content>button {
@@ -126,7 +85,7 @@ body {
     padding: 24px;
     padding-left: 220px;
     padding-right: 220px;
-    background-color: cadetblue;
+    background: rgba(285, 255, 255, 0.3);
 }
 
 .content {
@@ -134,5 +93,9 @@ body {
     margin: 10px;
     padding: 10vh;
     border: 2px solid rgb(255, 255, 255);
+    color: white;
+}
+
+h1 {
     color: white;
 }
