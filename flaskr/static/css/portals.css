@@ -221,3 +221,8 @@
 button[disabled] {
     background-color: gray;
 }
+
+.card>button:disabled,
+button[disabled]:hover {
+    background-color: gray;
+}
