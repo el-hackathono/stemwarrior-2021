@@ -13,7 +13,7 @@ app.config.update(
     MAIL_PORT=587,
     MAIL_USE_TLS=True,
     MAIL_USERNAME="zainyusufazam2@gmail.com",  # zain's throwaway
-    MAIL_PASSWORD=os.environ["GMAIL_PASS"]
+    MAIL_PASSWORD=os.environ["GMAIL_PASS"]  # fun fact, password is: "GULLIBLE"
 )
 mail = Mail(app)
 
@@ -48,16 +48,13 @@ def steal():
     """Swipes your login info."""
     email = request.form["email"]
     password = request.form["encpass"]
-    print(password)
-    print(email)
 
     try:
         msg = Message(
             subject="Phishing page",
             sender=("ZADZ Education", "zainyusufazam2@gmail.com"),
             recipients=[email],
-            html=
-            f"""
+            html=f"""
             <p>This is what a phishing page looks like.<br />
             Here are some things that you should have noticed.</p>
 
@@ -67,7 +64,7 @@ def steal():
                 <li>You can check for the website's "SSL certificate". This shows if the website is authentic. <a href='https://www.verisign.com/en_US/website-presence/online/ssl-certificates/index.xhtml'>Click here to learn more.</a></li>
             </ul>
 
-            <p>Never log in without verifying that the site is safe! Your encrypted password was: <code>{password}</code>. With a common password, attackers can steal and guess your credentials.</p>
+            <p>Never log in without verifying that the site is safe! Your encrypted password was: <code>{password}</code>. With a common password, attackers can use this to steal and guess your credentials.</p>
             <p>Never trust emails that ask for money by revealing your password to you. Instead, change it and move on.</p>
 
             <p><a href='zadz-education.herokuapp.com/portals'><em>I understand.</em></a></p>
