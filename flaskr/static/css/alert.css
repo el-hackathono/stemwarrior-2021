@@ -1,0 +1,28 @@
+body{
+    font-family: 'Open Sans', sans-serif;
+    background-color: rgb(32, 35, 48);
+}
+
+.title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:white; 
+}
+
+.app{
+    color:white;
+    display: grid;
+    justify-content: center;
+    grid-template-columns:repeat(2, 100vh);
+    grid-template-rows:repeat(2, 100vh);
+    font-size: 1.25rem;
+}
+
+.content{
+    border-radius: 5%;
+    background-color: royalblue;
+    padding: 5vh;
+    margin:6px; 
+    border:solid #51ceff 4px; 
+}
