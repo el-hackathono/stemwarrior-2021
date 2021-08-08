@@ -15,6 +15,7 @@ app.config.update(
     MAIL_USERNAME="zainyusufazam2@gmail.com",  # zain's throwaway
     MAIL_PASSWORD=os.environ["GMAIL_PASS"]  # fun fact, password is: "GULLIBLE"
 )
+
 mail = Mail(app)
 
 
@@ -34,7 +35,7 @@ def portals():
 @app.route("/disclaimers")
 def disclaimers():
     """Sign-in disclaimer."""
-    return render_template("disclaimers.html", routes_to=url_for(request.args['routes_to']))
+    return render_template("disclaimers.html", routes_to=url_for(request.args["routes_to"]))
 
 
 @app.route("/portals/signin")
@@ -66,7 +67,6 @@ def steal():
 
             <p>Never log in without verifying that the site is safe! Your encrypted password was: <code>{password}</code>. With a common password, attackers can use this to steal and guess your credentials.</p>
             <p>Never trust emails that ask for money by revealing your password to you. Instead, change it and move on.</p>
-
             <p><a href='zadz-education.herokuapp.com/portals'><em>I understand.</em></a></p>
             """
         )
