@@ -225,4 +225,7 @@ button[disabled] {
 .card>button:disabled,
 button[disabled]:hover {
     background-color: gray;
+    padding: 20px;
+    padding-left: 100px;
+    padding-right: 100px;
 }
