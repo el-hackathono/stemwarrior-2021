@@ -3,7 +3,6 @@ body {
     font-family: 'Open Sans', sans-serif
 }
 
-
 h1 {
     color: white;
 }
@@ -23,14 +22,14 @@ h1 {
     color: white;
 }
 
-.app{
-    display:grid;
+.app {
+    display: grid;
     justify-content: center;
     grid-template-columns: repeat(1);
     grid-template-rows: repeat(5);
 }
 
-.app>button{
+.app>button {
     margin: 3px;
     border-radius: 4px;
     border: none;
@@ -46,13 +45,12 @@ h1 {
     padding-right: 500px;
     -webkit-tap-highlight-color: transparent;
     position: relative;
-    color:white;
-    background-color:royalblue;
-
+    color: white;
+    background-color: royalblue;
     border: navy 2px;
 }
 
-.app>button:hover{ 
+.app>button:hover {
     padding: 25px;
     padding-left: 550px;
     padding-right: 551px;
