@@ -1,35 +1,166 @@
-  
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="stylesheet"
+            href="{{url_for('static', filename='css/portals.css')}}"
+        />
+        <title>Portals</title>
+    </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MainPage</title>
-    <link rel="stylesheet" href="{{url_for('static', filename='portals.css')}}" />
-    <script src="script.js" defer></script>
-</head>
+    <body>
+        <!-- Title Area -->
+        <div class="title-area">
+            <svg
+                id="title"
+                class="title"
+                width="597"
+                height="114"
+                viewBox="0 0 597 114"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+            >
+                <path
+                    d="M72.192 36.008C72.192 44.36 69.312 51.32 63.552 56.888C57.888 62.36 49.2 65.096 37.488 65.096H18.192V107H5.08801V6.632H37.488C48.816 6.632 57.408 9.368 63.264 14.84C69.216 20.312 72.192 27.368 72.192 36.008ZM37.488 54.296C44.784 54.296 50.16 52.712 53.616 49.544C57.072 46.376 58.8 41.864 58.8 36.008C58.8 23.624 51.696 17.432 37.488 17.432H18.192V54.296H37.488Z"
+                    stroke="white"
+                    stroke-width="5"
+                    mask="url(#path-1-outside-1)"
+                />
+                <path
+                    d="M133.983 108.008C124.671 108.008 116.175 105.848 108.495 101.528C100.815 97.112 94.7186 91.016 90.2066 83.24C85.7906 75.368 83.5826 66.536 83.5826 56.744C83.5826 46.952 85.7906 38.168 90.2066 30.392C94.7186 22.52 100.815 16.424 108.495 12.104C116.175 7.688 124.671 5.48 133.983 5.48C143.391 5.48 151.935 7.688 159.615 12.104C167.295 16.424 173.343 22.472 177.759 30.248C182.175 38.024 184.383 46.856 184.383 56.744C184.383 66.632 182.175 75.464 177.759 83.24C173.343 91.016 167.295 97.112 159.615 101.528C151.935 105.848 143.391 108.008 133.983 108.008ZM133.983 96.632C140.991 96.632 147.279 95 152.847 91.736C158.511 88.472 162.927 83.816 166.095 77.768C169.359 71.72 170.991 64.712 170.991 56.744C170.991 48.68 169.359 41.672 166.095 35.72C162.927 29.672 158.559 25.016 152.991 21.752C147.423 18.488 141.087 16.856 133.983 16.856C126.879 16.856 120.543 18.488 114.975 21.752C109.407 25.016 104.991 29.672 101.727 35.72C98.5586 41.672 96.9746 48.68 96.9746 56.744C96.9746 64.712 98.5586 71.72 101.727 77.768C104.991 83.816 109.407 88.472 114.975 91.736C120.639 95 126.975 96.632 133.983 96.632Z"
+                    stroke="white"
+                    stroke-width="5"
+                    mask="url(#path-1-outside-1)"
+                />
+                <path
+                    d="M254.53 107L230.626 65.96H214.786V107H201.682V6.632H234.082C241.666 6.632 248.05 7.928 253.234 10.52C258.514 13.112 262.45 16.616 265.042 21.032C267.634 25.448 268.93 30.488 268.93 36.152C268.93 43.064 266.914 49.16 262.882 54.44C258.946 59.72 252.994 63.224 245.026 64.952L270.226 107H254.53ZM214.786 55.448H234.082C241.186 55.448 246.514 53.72 250.066 50.264C253.618 46.712 255.394 42.008 255.394 36.152C255.394 30.2 253.618 25.592 250.066 22.328C246.61 19.064 241.282 17.432 234.082 17.432H214.786V55.448Z"
+                    stroke="white"
+                    stroke-width="5"
+                    mask="url(#path-1-outside-1)"
+                />
+                <path
+                    d="M351.067 6.632V17.288H323.707V107H310.603V17.288H283.099V6.632H351.067Z"
+                    stroke="white"
+                    stroke-width="5"
+                    mask="url(#path-1-outside-1)"
+                />
+                <path
+                    d="M426.525 84.68H382.749L374.685 107H360.861L397.149 7.208H412.269L448.413 107H434.589L426.525 84.68ZM422.781 74.024L404.637 23.336L386.493 74.024H422.781Z"
+                    stroke="white"
+                    stroke-width="5"
+                    mask="url(#path-1-outside-1)"
+                />
+                <path
+                    d="M477.333 96.344H512.469V107H464.229V6.632H477.333V96.344Z"
+                    stroke="white"
+                    stroke-width="5"
+                    mask="url(#path-1-outside-1)"
+                />
+                <path
+                    d="M558.209 108.008C551.585 108.008 545.633 106.856 540.353 104.552C535.169 102.152 531.089 98.888 528.113 94.76C525.137 90.536 523.601 85.688 523.505 80.216H537.473C537.953 84.92 539.873 88.904 543.233 92.168C546.689 95.336 551.681 96.92 558.209 96.92C564.449 96.92 569.345 95.384 572.897 92.312C576.545 89.144 578.369 85.112 578.369 80.216C578.369 76.376 577.313 73.256 575.201 70.856C573.089 68.456 570.449 66.632 567.281 65.384C564.113 64.136 559.841 62.792 554.465 61.352C547.841 59.624 542.513 57.896 538.481 56.168C534.545 54.44 531.137 51.752 528.257 48.104C525.473 44.36 524.081 39.368 524.081 33.128C524.081 27.656 525.473 22.808 528.257 18.584C531.041 14.36 534.929 11.096 539.921 8.792C545.009 6.488 550.817 5.336 557.345 5.336C566.753 5.336 574.433 7.688 580.385 12.392C586.433 17.096 589.841 23.336 590.609 31.112H576.209C575.729 27.272 573.713 23.912 570.161 21.032C566.609 18.056 561.905 16.568 556.049 16.568C550.577 16.568 546.113 18.008 542.657 20.888C539.201 23.672 537.473 27.608 537.473 32.696C537.473 36.344 538.481 39.32 540.497 41.624C542.609 43.928 545.153 45.704 548.129 46.952C551.201 48.104 555.473 49.448 560.945 50.984C567.569 52.808 572.897 54.632 576.929 56.456C580.961 58.184 584.417 60.92 587.297 64.664C590.177 68.312 591.617 73.304 591.617 79.64C591.617 84.536 590.321 89.144 587.729 93.464C585.137 97.784 581.297 101.288 576.209 103.976C571.121 106.664 565.121 108.008 558.209 108.008Z"
+                    stroke="white"
+                    stroke-width="5"
+                    mask="url(#path-1-outside-1)"
+                />
+            </svg>
 
-<body>
-
-    <div class="Basic-Info">
-        <h1>PORTALS</h1>
-    </div>
-
-    <div class="app">
-
-
-        <div class="content">
-            <h3>Phishing Wesbites</h3>
-            <p>A website cloning the appearence of a secure website, that tricks you into inputing your email and password.</p>
-            <button onclick="window.location.href='{{url_for('phishing')}}'">View Portal</button>
+            <img
+                class="circle circle-one"
+                src="{{url_for('static', filename='img/phishing.svg')}}"
+            />
+            <img
+                class="circle circle-two"
+                src="{{url_for('static', filename='img/password.svg')}}"
+            />
+            <img
+                class="circle circle-three"
+                src="{{url_for('static', filename='img/data.svg')}}"
+            />
         </div>
 
+        <!-- Portals Area -->
+        <div class="portals">
+            <h2 class="subtitle">Our Portals</h2>
 
+            <!-- Row One -->
+            <div class="row">
+                <!-- Card One -->
+                <div class="card card-one">
+                    <h3>Scam Websites</h3>
+                    <img
+                        src="{{url_for('static', filename='img/phishing.png')}}"
+                        alt="Email getting phished"
+                    />
+                    <p>
+                        An unverified website that tricks the user into
+                        inputting sensitive data, and sells it
+                    </p>
+                    <button
+                        onclick="window.location.href='{{url_for('signin')}}'"
+                    >
+                        View Portal
+                    </button>
+                </div>
 
+                <!-- Card Two -->
+                <div class="card card-two">
+                    <h3>Coming Soon</h3>
+                    <img
+                        src="{{url_for('static', filename='img/coming-soon.png')}}"
+                        alt="coming-soon"
+                    />
+                    <p>This portal is in the making!</p>
+                    <button>Coming Soon</button>
+                </div>
 
+                <!-- Card Three -->
+                <div class="card card-three">
+                    <h3>Coming Soon</h3>
+                    <img
+                        src="{{url_for('static', filename='img/coming-soon.png')}}"
+                        alt="coming-soon"
+                    />
+                    <p>This portal is in the making!</p>
+                    <button>Coming Soon</button>
+                </div>
 
-</body>
+                <!-- Card Four -->
+                <div class="card card-four">
+                    <h3>Coming Soon</h3>
+                    <img
+                        src="{{url_for('static', filename='img/coming-soon.png')}}"
+                        alt="coming-soon"
+                    />
+                    <p>This portal is in the making!</p>
+                    <button>Coming Soon</button>
+                </div>
+            </div>
+        </div>
 
+        <div class="recog">
+            <div>
+                Icons made by
+                <a
+                    href="https://www.flaticon.com/authors/eucalyp"
+                    title="Eucalyp"
+                    >Eucalyp</a
+                >
+                from
+                <a href="https://www.flaticon.com/" title="Flaticon"
+                    >www.flaticon.com</a
+                >
+            </div>
+            <div>
+                Icons made by
+                <a href="https://www.freepik.com" title="Freepik">Freepik</a>
+                from
+                <a href="https://www.flaticon.com/" title="Flaticon"
+                    >www.flaticon.com</a
+                >
+            </div>
+        </div>
+    </body>
 </html>
