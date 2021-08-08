@@ -255,7 +255,6 @@ button[disabled]:hover {
 /* Attributions/Recognitions for use of images */
 
 .recog {
-    position: fixed;
     left: 0;
     bottom: 0;
     width: 100%;
