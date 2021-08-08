@@ -5,10 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Document</title>
-        <link
-            rel="stylesheet"
-            href="{{url_for('static', filename='css/disclaimers.css')}}"
-        />
+        <link rel="stylesheet" href="{{url_for('static', filename='css/portals.css')}}" />
     </head>
     <body>
         <p class="title">
@@ -21,9 +18,6 @@
             LINKS Make a spare email and spare accounts or use
             <a href="https://cryptogmail.com/">https://cryptogmail.com/</a> for
             a temporary email to use<br />
-            <br />
-            To test these phishing websites it is necessary to make a fake or
-            alternate account before use<br />
             <br />
             The below Links are CLONES of popular websites and WILL STEAL YOUR
             EMAIL AND PASSWORD <br />
@@ -39,10 +33,21 @@
             it is a component of the phishing website <br />
             if not then you may potentially have been routed to a legitimate
             website.
+
+            <br> The website is designed so that once you input email 
+            It will send an email to that email<br> Basically stating your email and encrypted password 
+            with a notification that you have been phished <br>
+            For usage purposes it is designed so that you can type literally anything in the password bar
+            <br> and not nessecarily an actual password <br>
+            And we don't unecrypt your password in order for you have to a stronger 
+            sense of security testing our project. 
         </p>
 
-        <button onclick="window.location.href='{{routes_to}}'">
-            I UNDERSTAND AND ACCEPT ANY AND ALL POTENTIAL RISKS
+        <div class="hold">
+        <button class="b" onclick="window.location.href='{{routes_to}}'">
+            I accept all risks involved, take me to the Facebook Phishing Website
         </button>
+    </div>
+
     </body>
 </html>
