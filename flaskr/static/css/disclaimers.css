@@ -29,29 +29,32 @@ h1 {
     grid-template-rows: repeat(5);
 }
 
-.app>button {
+
+.b:hover {
+   background-color: skyblue;
+}
+
+.b{
     margin: 3px;
     border-radius: 4px;
     border: none;
     font-size: 1.5rem;
     outline: none;
     cursor: pointer;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
     vertical-align: top;
     padding: 20px;
-    padding-left: 500px;
-    padding-right: 500px;
+    padding-left: 250px;
+    padding-right: 250px;
     -webkit-tap-highlight-color: transparent;
     position: relative;
     color: white;
     background-color: royalblue;
-    border: navy 2px;
+    border: navy 2px; 
 }
 
-.app>button:hover {
-    padding: 25px;
-    padding-left: 550px;
-    padding-right: 550px;
+.hold{
+display: flex;
+justify-content: center;
+align-items: center;
+
 }
