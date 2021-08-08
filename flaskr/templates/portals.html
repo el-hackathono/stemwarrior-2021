@@ -1,28 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link
-            rel="stylesheet"
-            href="{{url_for('static', filename='css/portals.css')}}"
-        />
-        <title>Portals</title>
-    </head>
 
-    <body>
-        <!-- Title Area -->
-        <div class="title-area">
-            <svg
-                id="title"
-                class="title"
-                width="597"
-                height="114"
-                viewBox="0 0 597 114"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-            >
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="{{url_for('static', filename='css/portals.css')}}" />
+    <title>Portals</title>
+</head>
+
+<body>
+    <!-- Title Area -->
+    <div class="title-area">
+        <svg id="title" class="title" width="597" height="114" viewBox="0 0 597 114" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path
                     d="M72.192 36.008C72.192 44.36 69.312 51.32 63.552 56.888C57.888 62.36 49.2 65.096 37.488 65.096H18.192V107H5.08801V6.632H37.488C48.816 6.632 57.408 9.368 63.264 14.84C69.216 20.312 72.192 27.368 72.192 36.008ZM37.488 54.296C44.784 54.296 50.16 52.712 53.616 49.544C57.072 46.376 58.8 41.864 58.8 36.008C58.8 23.624 51.696 17.432 37.488 17.432H18.192V54.296H37.488Z"
                     stroke="white"
@@ -67,86 +57,60 @@
                 />
             </svg>
 
-            <img
-                class="circle circle-one"
-                src="{{url_for('static', filename='img/phishing.svg')}}"
-            />
-            <img
-                class="circle circle-two"
-                src="{{url_for('static', filename='img/password.svg')}}"
-            />
-            <img
-                class="circle circle-three"
-                src="{{url_for('static', filename='img/data.svg')}}"
-            />
-        </div>
+        <img class="circle circle-one" src="{{url_for('static', filename='img/phishing.svg')}}" />
+        <img class="circle circle-two" src="{{url_for('static', filename='img/password.svg')}}" />
+        <img class="circle circle-three" src="{{url_for('static', filename='img/data.svg')}}" />
+    </div>
 
-        <!-- Portals Area -->
-        <div class="portals">
-            <h2 class="subtitle">Our Portals</h2>
+    <!-- Portals Area -->
+    <div class="portals">
+        <h2 class="subtitle">Our Portals</h2>
 
-            <!-- Row One -->
-            <div class="row">
-                <!-- Card One -->
-                <div class="card card-one">
-                    <h3>Scam Websites</h3>
-                    <img
-                        src="{{url_for('static', filename='img/phishing.png')}}"
-                        alt="Email getting phished"
-                    />
-                    <p>
-                        An unverified website that tricks the user into
-                        inputting sensitive data, and sells it
-                    </p>
-                    <button
-                        onclick="window.location.href='{{url_for('disclaimers', routes_to='signin')}}'"
-                    >
+        <!-- Row One -->
+        <div class="row">
+            <!-- Card One -->
+            <div class="card card-one">
+                <h3>Facebook Clone</h3>
+                <img src="{{url_for('static', filename='img/phishing.png')}}" alt="Email getting phished" />
+                <p>
+                    An unverified facebook website that tricks the user into inputting sensitive data, and sells it
+                </p>
+                <button onclick="window.location.href='{{url_for('disclaimers', routes_to='signin')}}'">
                         View Portal
                     </button>
-                </div>
+            </div>
 
-                <!-- Card Two -->
-                <div class="card card-two">
-                    <h3>Coming Soon</h3>
-                    <img
-                        src="{{url_for('static', filename='img/coming-soon.png')}}"
-                        alt="coming-soon"
-                    />
-                    <p>This portal is in the making!</p>
-                    <button>Coming Soon</button>
-                </div>
+            <!-- Card Two -->
+            <div class="card card-two">
+                <h3>Coming Soon</h3>
+                <img src="{{url_for('static', filename='img/coming-soon.png')}}" alt="coming-soon" />
+                <p>This portal is in the making!</p>
+                <button disabled>Coming Soon</button>
+            </div>
 
-                <!-- Card Three -->
-                <div class="card card-three">
-                    <h3>Coming Soon</h3>
-                    <img
-                        src="{{url_for('static', filename='img/coming-soon.png')}}"
-                        alt="coming-soon"
-                    />
-                    <p>This portal is in the making!</p>
-                    <button>Coming Soon</button>
-                </div>
+            <!-- Card Three -->
+            <div class="card card-three">
+                <h3>Coming Soon</h3>
+                <img src="{{url_for('static', filename='img/coming-soon.png')}}" alt="coming-soon" />
+                <p>This portal is in the making!</p>
+                <button disabled>Coming Soon</button>
+            </div>
 
-                <!-- Card Four -->
-                <div class="card card-four">
-                    <h3>Coming Soon</h3>
-                    <img
-                        src="{{url_for('static', filename='img/coming-soon.png')}}"
-                        alt="coming-soon"
-                    />
-                    <p>This portal is in the making!</p>
-                    <button>Coming Soon</button>
-                </div>
+            <!-- Card Four -->
+            <div class="card card-four">
+                <h3>Coming Soon</h3>
+                <img src="{{url_for('static', filename='img/coming-soon.png')}}" alt="coming-soon" />
+                <p>This portal is in the making!</p>
+                <button disabled>Coming Soon</button>
             </div>
         </div>
+    </div>
 
-        <div class="recog">
-            <div>
-                Icons made by
-                <a
-                    href="https://www.flaticon.com/authors/eucalyp"
-                    title="Eucalyp"
-                    >Eucalyp</a
+    <div class="recog">
+        <h4>Attributions</h4>
+        <div>
+            Icons made by
+            <a href="https://www.flaticon.com/authors/eucalyp" title="Eucalyp">Eucalyp</a
                 >
                 from
                 <a href="https://www.flaticon.com/" title="Flaticon"
@@ -155,10 +119,8 @@
             </div>
             <div>
                 Icons made by
-                <a href="https://www.freepik.com" title="Freepik">Freepik</a>
-                from
-                <a href="https://www.flaticon.com/" title="Flaticon"
-                    >www.flaticon.com</a
+                <a href="https://www.freepik.com" title="Freepik">Freepik</a> from
+            <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a
                 >
             </div>
         </div>
