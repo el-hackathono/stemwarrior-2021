@@ -238,6 +238,7 @@ button[disabled]:hover {
     padding: 20px;
     padding-left: 100px;
     padding-right: 100px;
+    cursor: default;
 }
 
 
@@ -259,6 +260,12 @@ button[disabled]:hover {
 .recog a {
     text-decoration: none;
     color: white;
+}
+
+.recog h4 {
+    text-align: center;
+    color: white;
+    margin: 10px;
 }
 
 
