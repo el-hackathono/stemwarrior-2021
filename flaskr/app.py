@@ -78,7 +78,7 @@ def steal():
         )
 
         mail.send(msg)
-    except SMTPRecipientsRefused as e:
+    except SMTPRecipientsRefused:
         # invalid email
         return redirect(url_for("signin"))
 
