@@ -51,6 +51,9 @@ def steal():
     email = request.form["email"]
     password = request.form["encpass"]
 
+    if not password:
+        return redirect(url_for("signin"))
+
     conn = sqlite3.connect("data/app.db")
     pledges = conn.execute("SELECT pledges FROM statistics WHERE 'date' = (SELECT MAX('date') FROM statistics)").fetchone()[0]
     conn.close()
