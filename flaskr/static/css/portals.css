@@ -147,7 +147,7 @@ body {
     align-items: center;
     justify-content: center;
     vertical-align: top;
-    padding: 30px;
+    padding: 20px;
     padding-left: 100px;
     padding-right: 100px;
     -webkit-tap-highlight-color: transparent;
@@ -155,7 +155,7 @@ body {
 }
 
 .card>button:hover {
-    padding: 35px;
+    padding: 24px;
     padding-left: 120px;
     padding-right: 120px;
     background-color: cadetblue;
@@ -211,19 +211,19 @@ body {
 }
 
 .card-one>button {
-    margin-top: 70px;
+    margin-top: 40px;
 }
 
 .card-two>button {
-    margin-top: 80px;
+    margin-top: 50px;
 }
 
 .card-three>button {
-    margin-top: 80px;
+    margin-top: 50px;
 }
 
 .card-four>button {
-    margin-top: 80px;
+    margin-top: 50px;
 }
 
 .portals {
