@@ -76,7 +76,7 @@ def steal():
             <p>Never log in without verifying that the site is safe! Your encrypted password was: <code>{password}</code>. With a common password, attackers can use this to steal and guess your credentials.</p>
             <p>Never trust emails that ask for money by revealing your password to you. Instead, change it and move on.</p>
             <p>Pledge along with {pledges} other people to complete this task.</p>
-            <p><a href='zadz-education.herokuapp.com/pledge'><em>I understand.</em></a></p>
+            <p><a href='http://zadz-education.herokuapp.com/pledge'><em>I understand.</em></a></p>
             """
         )
 
