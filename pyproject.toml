@@ -1,7 +1,7 @@
 [tool.poetry]
 name = "ZADZ Education"
 version = "0.1.0"
-description = ""
+description = "StemWarriorHacks 2021 submission."
 authors = [
   "zainthemaynnn <zainyusufazam@gmail.com>",
   "Diovanni You don't need to know",

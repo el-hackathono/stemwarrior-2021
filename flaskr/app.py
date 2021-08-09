@@ -2,6 +2,7 @@
 
 import os
 from smtplib import SMTPRecipientsRefused
+import sqlite3
 
 from flask import Flask, render_template, request, redirect, url_for
 from flask_mail import Mail, Message
@@ -15,6 +16,7 @@ app.config.update(
     MAIL_USERNAME="zainyusufazam2@gmail.com",  # zain's throwaway
     MAIL_PASSWORD=os.environ["GMAIL_PASS"]  # fun fact, password is: "GULLIBLE"
 )
+
 mail = Mail(app)
 
 
@@ -34,7 +36,7 @@ def portals():
 @app.route("/disclaimers")
 def disclaimers():
     """Sign-in disclaimer."""
-    return render_template("disclaimers.html", routes_to=url_for(request.args['routes_to']))
+    return render_template("disclaimers.html", routes_to=url_for(request.args["routes_to"]))
 
 
 @app.route("/portals/signin")
@@ -48,6 +50,10 @@ def steal():
     """Swipes your login info."""
     email = request.form["email"]
     password = request.form["encpass"]
+
+    conn = sqlite3.connect("data/app.db")
+    pledges = conn.execute("SELECT pledges FROM statistics WHERE 'date' = (SELECT MAX('date') FROM statistics)").fetchone()[0]
+    conn.close()
 
     try:
         msg = Message(
@@ -66,8 +72,8 @@ def steal():
 
             <p>Never log in without verifying that the site is safe! Your encrypted password was: <code>{password}</code>. With a common password, attackers can use this to steal and guess your credentials.</p>
             <p>Never trust emails that ask for money by revealing your password to you. Instead, change it and move on.</p>
-
-            <p><a href='zadz-education.herokuapp.com/portals'><em>I understand.</em></a></p>
+            <p>Pledge along with {pledges} other people to complete this task.</p>
+            <p><a href='zadz-education.herokuapp.com/pledge'><em>I understand.</em></a></p>
             """
         )
 
@@ -76,4 +82,26 @@ def steal():
         # invalid email
         return redirect(url_for("signin"))
 
-    return redirect(url_for("index"))
+    return redirect(url_for("alert"))
+
+
+@app.route("/portals/alert")
+def alert():
+    """Fake facebook page."""
+    return render_template("alert.html")
+
+
+@app.route("/portals/mission")
+def mission():
+    """Fake facebook page."""
+    return render_template("mission.html")
+
+
+@app.route("/pledge")
+def pledge():
+    """Fake facebook page."""
+    conn = sqlite3.connect("data/app.db")
+    conn.execute("UPDATE statistics SET pledges = pledges + 1 WHERE 'date' = (SELECT MAX('date') FROM statistics)")
+    conn.commit()
+    conn.close()
+    return redirect(url_for("alert"))
