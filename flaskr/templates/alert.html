@@ -1,60 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="alert.css" />
-    <title>Document</title>
-</head>
-<body>
-
-    <div class="title">
-        <h1>ZADZ EDUCATION</h1>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="stylesheet"
+            href="{{url_for('static', filename='css/alert.css')}}"
+        />
+        <title>Document</title>
+    </head>
+    <body>
+        <div class="title">
+            <h1>ZADZ EDUCATION</h1>
         </div>
 
-<div class="app">
+        <div class="app">
+            <div class="content">
+                <h1>What is Phishing?</h1>
+                <p>
+                    Phishing is duplicating the appearence of a website such as
+                    a Facebook Login Page.<br />
+                    The using this unsuspected appearence to trick people into
+                    inputing personal account information <br />
+                    in the website. It is a felony if done without gaining prior
+                    consent, and notifying the other person about the link.<br />
+                </p>
+            </div>
 
-<div class="content">
-<h1>What is Phishing?</h1>
-<p>Phishing is duplicating the appearence of a website such as a Facebook Login Page.<br>
-The using this unsuspected appearence to trick people into inputing personal account information <br>
-in the website. It is a felony if done without gaining prior consent, and notifying the other person about the link.<br>
-</p>
-</div>
+            <div class="content">
+                <h1>How is Phishing Done?</h1>
+                <p>
+                    Phisphing is normally done by copying and pasting the source
+                    code of a website, such as Facebook from the previous
+                    example. <br />
+                    Using that to show a similar appearence to the standard
+                    website, and then slightly altering the code,<br />
+                    to send the password and email information entered to a
+                    python or php script, granting the owner of the fake
+                    webpage, access to your personal information.
+                </p>
+            </div>
 
-<div class="content">
-<h1>How is Phishing Done?
-</h1>
-<p>  Phisphing is normally done by copying and pasting the source code of a website, such as Facebook from the previous example.
-    <br> Using that to show a similar appearence to the standard website, and then slightly altering the code,<br> to send the password
-and email information entered to a python or php script, granting the owner of the fake webpage, access to your personal information.
-</p>
-</div>
+            <div class="content">
+                <h1>How did you do your project?</h1>
+                <p>
+                    We gave users a temporary email before using the phishing
+                    website, in order to protect personal information<br />
+                    Gave a full disclaimer,got consent, and got approval from
+                    Stem Warrior Hacks in advance <br />
+                    <br />
+                    Alongside that we left the password as encrypted and we left
+                    out code that would verify the password <br />
+                    in order for our users to be able to test our project
+                    convienently without making multiple accounts.
+                    <br />
+                    We also added a link to the login page which takes users
+                    here, so they can learn about phishing <br />
+                    rater than sending them to Facebook's standard page, which
+                    would leave them unknowing about the process that was just
+                    undertaken.
+                </p>
+            </div>
 
-<div class="content">
-<h1>How did you do your project?</h1>
-<p>We gave users a temporary email before using the phishing website, in order to protect personal information<br>
-Gave a full disclaimer,got consent, and got approval from Stem Warrior Hacks in advance <br>
-<br>
-Alongside that we left the password as encrypted and we left out code that would verify the password <br>
-in order for our users to be able to test our project convienently without making multiple accounts.
-<br> We also added a link to the login page which takes users here, so they can learn about phishing <br>
-rater than sending them to Facebook's standard page, which would leave them unknowing about the process that was just undertaken. 
-</p>
-</div>
-
-<div class="content">
-    <h1>How can I save myself from being phished?</h1>
-    <p>The best thing you can do to save yourself from cybercrime is to not open any unusual links you find or are sent.<br>
-        The next best thing is to check the url of every link that you are on.<br>
-        Most people who do phishing have url's that are the exact same as Facebook except for the change of a single character. 
-        <br> Another sign you are being phished is if you see "http" instead of "https" in the url. 
-        <br> The last piece of advice we can give you is simply to not input any personal information on a link sent to you by somebody non trustworthy
-    </p>
-</div>
-</div>
-
-
-</body>
+            <div class="content">
+                <h1>How can I save myself from being phished?</h1>
+                <p>
+                    The best thing you can do to save yourself from cybercrime
+                    is to not open any unusual links you find or are sent.<br />
+                    The next best thing is to check the url of every link that
+                    you are on.<br />
+                    Most people who do phishing have url's that are the exact
+                    same as Facebook except for the change of a single
+                    character.
+                    <br />
+                    Another sign you are being phished is if you see "http"
+                    instead of "https" in the url. <br />
+                    The last piece of advice we can give you is simply to not
+                    input any personal information on a link sent to you by
+                    somebody non trustworthy
+                </p>
+            </div>
+        </div>
+    </body>
 </html>
